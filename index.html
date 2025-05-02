@@ -6,47 +6,71 @@
     <title>DevFolio Bootstrap Portfolio Template</title>
     <link rel="icon" href="./images/">
 
-
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-query.css">
 </head>
 <body>
     
     <header id="home" class="vh-100 d-flex  align-items-center justify-content-center position-relative">
         
         <nav class="navbar navbar-expand-lg my-bg-color position-fixed top-0 end-0 start-0">
-            <div class="container-fluid ">
+            <div class="container">
               
                 <a class="navbar-brand text-light" href="./index.html">DevFolio</a>
                 
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler text-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
               
              
              
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    <a class="nav-link active " aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicrs">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#work">WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">BLOG</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      DROP DOWEN
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item " href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item " href="#">Drop Down 1</a></li>
+                      <!-- <li>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Deep Drop Down
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="#">Deep Drop Down 1</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#">Deep Drop Down 2</a></li>
+                            <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
+                            <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
+                          </ul>
+                      </li> -->
+                      <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                      <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                      <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
                     </ul>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
                 </ul>
-
               </div>
            
             
@@ -61,6 +85,78 @@
     
     <main>
 
+        <section id="about" class="pt-5 px-3">
+            <div class="container shadow py-5 px-3 px-md-5">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="profile  d-sm-flex align-items-center justify-content-evenly">
+                            <div class="photo w-50 mb-4">
+                                <img class="rounded-2 w-75" src="./images/testimonial-2.jpg" alt="Morgan Freeman">
+                            </div>
+                            <div class="info w-50 ">
+                                <p class="text-secondary"><span class="fw-bold text-black">Name: </span>Morgan Freeman</p>
+                                <p class="text-secondary"><span class="fw-bold text-black">Porifile: </span>full stack developer</p>
+                                <p class="text-secondary"><span class="fw-bold text-black">Email: </span>contact@example.com</p>
+                                <p class="text-secondary"><span class="fw-bold text-black">Phone: </span>(617) 557-0089</p>
+                            </div>
+                        </div>
+
+                        <div class="skill  mt-3">
+                            <p class="fw-bold">Skill</p>
+                            
+                            <div class="mt-2">
+                                <p class="text-secondary">HTML 85%</p>   
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <p class="text-secondary">CSS3 75%</p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <p class="text-secondary">PHP 50%</p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <p class="text-secondary">JAVASCRIPT 90%</p>
+                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="about-me">
+                            <h5>About me</h5>
+                            <article class="text-secondary">
+                                <p>
+                                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.
+                                </p>
+
+                                <p>
+                                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                                </p>
+
+                                <p>
+                                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 

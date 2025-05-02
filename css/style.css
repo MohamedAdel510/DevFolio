@@ -2,6 +2,7 @@
     background-image:linear-gradient(rgba(0, 0, 0, .5)), url(../images/hero-bg.jpg) ;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .tittle{
@@ -22,7 +23,7 @@
 }
 
 @keyframes typing {
-    1%   { content: ""; }
+    1%   { content: "|"; }
     2%   { content: "F|"; }
     3%   { content: "Fr|"; }
     4%   { content: "Fre|"; }
@@ -123,6 +124,63 @@
     --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);  
 }
 
+.navbar-brand{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 .nav-link{
     color: #fff;
+    font-size: 12px;
+}
+
+.nav-link:hover{
+    color: #5ABDFF;
+}
+
+.nav-link:focus{
+    color: #fff;
+}
+
+.dropdown-item {
+    font-size: 12px;
+}
+
+/* *********** */
+
+#about{
+    background-color: #f1f1f1;
+}
+
+.info p{
+    font-size: 12px;
+}
+
+.progress{
+    height: 10px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.about-me h5{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.about-me h5::before{
+    content: '';
+    position: absolute;
+    top: 150%;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: #0d6efd;
+}
+
+.about-me p{
+    line-height: 1.5;
 }
