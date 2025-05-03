@@ -195,6 +195,7 @@
 .title h2{
     font-size: 40px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .title p{
@@ -245,4 +246,61 @@
 
 .service p{
     font-size: 12px;
+}
+
+.numbers{
+    background-image:linear-gradient(rgba(0, 120, 255, .7)), url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.count-icon{
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    margin-inline: auto;
+    border: solid 6px rgb(255, 255, 255, .7);
+}
+
+.count h3{
+    font-size: 28px;
+    margin: 5px;
+}
+
+.count p{
+    font-size: 14px;
+}
+
+
+#portfolio{
+    background-color: #f1f1f1;
+}
+
+.card-body h5{
+  font-size: 16px;
+}
+
+.card-body p{
+    font-size: 12px;
+}
+
+.card-body i{
+    font-size: 32px;
+}
+
+.card img{
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.card img:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
 }
