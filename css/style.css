@@ -297,10 +297,37 @@
     -o-transition: transform 1s;
 }
 
-.card img:hover{
+#portfolio .card img:hover{
     transform: scale(1.3);
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
     -ms-transform: scale(1.3);
     -o-transform: scale(1.3);
+}
+
+.post h6{
+    font-size: 12px;
+    width: fit-content;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+}
+
+.poster{
+    background-color: #f1f1f1;
+}
+
+.poster img{
+    width: 30px;
+    height: 30px;
+}
+
+.poster p{
+    font-size: 14px;
+}
+
+#blog{
+    background-color: #f1f1f1;
 }
